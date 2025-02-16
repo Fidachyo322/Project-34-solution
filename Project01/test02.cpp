@@ -2,18 +2,18 @@
 
 using namespace std;
 
-void test(int c) {
-
-	c++;
-	cout << c << endl;
-	return c;
+void change(int number) {
+	number *= 10;
+	
 }
 
 int main() {
-	int c = 0;
-	c = test(c);
-	c = test(c);
-	c = test(c);
-	c = test(c);
+	int x = 100;
+
+	cout << "Before: x =" << x << endl;
+	change(x);
+	cout << "After: x =" << x << endl;
+
+
 	return 0;
 }
