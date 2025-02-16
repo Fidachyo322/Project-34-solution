@@ -2,8 +2,8 @@
 
 using namespace std;
 
-void change(int number) {
-	number *= 10;
+void change(int* number) {
+	*number = *number * 10;
 	
 }
 
@@ -11,7 +11,7 @@ int main() {
 	int x = 100;
 
 	cout << "Before: x =" << x << endl;
-	change(x);
+	change(&x);
 	cout << "After: x =" << x << endl;
 
 
